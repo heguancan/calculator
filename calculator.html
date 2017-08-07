@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/cal.css">
+</head>
+<body>
+
+		
+		<div class="calc">
+    <header id="screen">0</header>
+    <div class="nav">
+			<div class="row">
+        <div class="sign" onclick="backzero()">AC</div>
+        <div class="sign" onclick="backspace()"><-</div>
+        <div class="sign" id="%" onclick="appContent(this.id)">%</div>
+        <div class="sign" id="/" onclick="appContent(this.id)">/</div>
+      </div>
+      <div class="row">
+        <div class="sign" id="7" onclick="appContent(this.id)">7</div>
+        <div class="sign" id="8" onclick="appContent(this.id)">8</div>
+        <div class="sign" id="9" onclick="appContent(this.id)">9</div>
+        <div class="sign" id="*" onclick="appContent(this.id)">*</div>
+      </div>
+      <div class="row">
+        <div class="sign" id="4" onclick="appContent(this.id)">4</div>
+        <div class="sign" id="5" onclick="appContent(this.id)">5</div>
+        <div class="sign" id="6" onclick="appContent(this.id)">6</div>
+        <div class="sign" id="-" onclick="appContent(this.id)">-</div>
+      </div>
+      <div class="row">
+        <div class="sign" id="1" onclick="appContent(this.id)">1</div>
+        <div class="sign" id="2" onclick="appContent(this.id)">2</div>
+        <div class="sign" id="3" onclick="appContent(this.id)">3</div>
+        <div class="sign" id="+" onclick="appContent(this.id)">+</div>
+      </div>
+      <div class="row">
+        <div class="sign" id="00" onclick="appContent(this.id)">00</div>
+        <div class="sign" id="0"  onclick="appContent(this.id)">0</div>
+        <div class="sign" id="."  onclick="appContent(this.id)">.</div>
+        <div class="sign" id="="  onclick="result()">=</div>
+      </div>
+      </div>
+    </div>
+
+</body>
+</html>
+<script src='js/cal.js' type="text/javascript" charset="utf-8" async defer></script>
